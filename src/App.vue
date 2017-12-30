@@ -4,7 +4,6 @@
       <div class="input">
         <label for="email">Email</label>
         <input 
-        :class="{ error: $v.email.$invalid}"
         type="email" 
         id="email" 
         @input="$v.email.$touch()"
@@ -56,6 +55,9 @@ export default {
       required,
     },
     lastName: {
+      required,
+    },
+    password: {
       required,
     },
   },
